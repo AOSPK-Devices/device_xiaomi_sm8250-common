@@ -53,6 +53,9 @@ class FingerprintInscreen : public IFingerprintInscreen {
     sp<IDisplayFeature> mXiaomiDisplayFeatureService;
     sp<ITouchFeature> mTouchFeatureService;
     sp<IXiaomiFingerprint> mXiaomiFingerprintService;
+
+    std::mutex mCallbackLock;
+    sp<IFingerprintInscreenCallback> mCallback;
 };
 
 }  // namespace implementation
