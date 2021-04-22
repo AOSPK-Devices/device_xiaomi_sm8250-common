@@ -78,6 +78,9 @@ persist.vendor.data.mode=concurrent
 persist.vendor.ssr.enable_ramdumps=1
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
+# Use Vulkan backend for Skia UI rendering
+debug.hwui.renderer=skiavk
+
 # ZRAM writeback
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=180
