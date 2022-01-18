@@ -127,8 +127,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio@2.1-impl \
-    android.hardware.soundtrigger@2.3-impl \
-    sound_trigger.primary.kona
+    android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -406,10 +405,6 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
-    
-# RemovePackages
-PRODUCT_PACKAGES += \
-    RemovePackages
 
 # RIL
 PRODUCT_PACKAGES += \
