@@ -245,16 +245,13 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi
+
 ifeq ($(TARGET_HAS_FOD),true)
 PRODUCT_PACKAGES += \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 endif
-
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_kona
-
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -406,6 +403,7 @@ PRODUCT_PACKAGES += \
     init.qti.dcvs.sh
 
 PRODUCT_PACKAGES += \
+    init.fingerprint.rc \
     init.motor.rc \
     init.nfc.rc \
     init.qcom.power.rc \
@@ -446,7 +444,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_kona
+    vendor.lineage.touch@1.0-service.xiaomi
 
 # USB
 PRODUCT_PACKAGES += \
